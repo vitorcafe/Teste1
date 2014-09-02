@@ -38,7 +38,7 @@ namespace WPF_RemoteControl_with_USBUIRT
         public string dimica;
         public string mute;
         Controller mc = new Controller();
-        private static string irCode = "0000 0071 0000 0032 0080 0040 0010 0010 0010 0030 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0030 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0030 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0030 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0030 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0030 0010 0aad";
+        public static string irCode = "0000 006B 0000 0022 00AB 00AE 0016 0041 0016 0041 0016 0041 0016 0016 0016 0016 0016 0016 0016 0016 0016 0016 0016 0041 0016 0041 0016 0041 0016 0016 0016 0016 0016 0016 0016 0016 0016 0016 0016 0041 0016 0016 0016 0016 0016 0041 0016 0041 0016 0016 0016 0016 0016 0041 0016 0016 0016 0041 0016 0041 0016 0016 0016 0016 0016 0041 0016 0041 0016 0016 0016 0703";
         /// CodeFormat = Define o formato dos códigos quando usados para transmitir ou aprender códigos IR
         //private static CodeFormat transmitFormat = CodeFormat.Pronto;
         //private static LearnCompletedEventArgs learnCompletedEventArgs = null; ///é anulado o Evento LearnCompleted
@@ -64,9 +64,9 @@ namespace WPF_RemoteControl_with_USBUIRT
         private static void TestLearn(Controller mc, CodeFormat learnFormat, LearnCodeModifier learnCodeModifier)
         {
             learnCompletedEventArgs = null;
-            Console.WriteLine("<Press x to abort Learn>");
+      //      Console.WriteLine("<Press x to abort Learn>");
             mc.Learning += new UsbUirt.Controller.LearningEventHandler(mc_Learning);
-      //      mc.LearnCompleted += new UsbUirt.Controller.LearnCompletedEventHandler(mc_LearnCompleted);
+           // mc.LearnCompleted += new UsbUirt.Controller.LearnCompletedEventHandler(mc_LearnCompleted);
             
             try
             {
