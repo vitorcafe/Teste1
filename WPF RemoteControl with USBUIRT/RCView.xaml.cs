@@ -165,49 +165,17 @@ namespace WPF_RemoteControl_with_USBUIRT
         private void button1_Click(object sender, EventArgs e)
         {
 
-          //public  string numero;
-          //  numero = irCode;
-            // if(radioButton1.IsChecked==true)
-            //{
-                TestLearn(mc, CodeFormat.Uuirt, LearnCodeModifier.FrequencyDetect);
-               
-                          ligar = irCode;
-                       
-                                 //  Console.WriteLine("asdkasgdaisgdi  " + ligar);
-             //}
-            
-           
-            if(radioButton2.IsChecked==true)
-            {
-                TestLearn(mc, CodeFormat.Uuirt, LearnCodeModifier.None);
-                desligar=irCode;
-            }
-            if(radioButton3.IsChecked==true)
-            {
-                TestLearn(mc, CodeFormat.Uuirt, LearnCodeModifier.None);
-                aumvol=irCode;
-            }
-            if(radioButton4.IsChecked==true)
-            {
-                TestLearn(mc, CodeFormat.Uuirt, LearnCodeModifier.None);
-                dimivol=irCode;
-            }
-            if(radioButton5.IsChecked==true)
-            {
-                TestLearn(mc, CodeFormat.Uuirt, LearnCodeModifier.None);
-                aumca=irCode;
-            }
-            if(radioButton6.IsChecked==true)
-            {
-                TestLearn(mc, CodeFormat.Uuirt, LearnCodeModifier.None);
-                dimivol=irCode;
-            }
-            if(radioButton7.IsChecked==true)
-            {
-                TestLearn(mc, CodeFormat.Uuirt, LearnCodeModifier.None);
-                mute=irCode;
-            }
+            TestLearn(mc, CodeFormat.Uuirt, LearnCodeModifier.FrequencyDetect);
+            ligar = irCode;
+            Console.WriteLine("Aqui: " + ligar);
         }
+
+        //private void Aprendizagem(object sender, EventArgs e)
+        //{
+        //    TestLearn(mc, CodeFormat.Uuirt, LearnCodeModifier.FrequencyDetect);
+        //    ligar = irCode;
+        //    Console.WriteLine("Aqui: " + ligar);
+        //}
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
